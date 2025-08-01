@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ===== BASIC META ===== -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Baran’s Bakery – Stuffed Cookies in Kitchener</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Baran’s Bakery – Same-Day Cookie Delivery in Kitchener/Waterloo</title>
+  <meta name="description"
+        content="Halal, Persian-inspired cookies baked fresh daily and delivered across Kitchener-Waterloo. Order online – warm, gooey cookies at your door tonight." />
+  <link rel="canonical" href="https://www.baransbakery.ca/" />
+
+  <!-- ===== SOCIAL / OG ===== -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Baran’s Bakery – Gooey Cookies Delivered Tonight" />
+  <meta property="og:description" content="Skip the DMs. Build your cookie box online and get same-day delivery anywhere in KW." />
+  <meta property="og:url"         content="https://www.baransbakery.ca/" />
+  <meta property="og:image"       content="images/baran_better_logo.png" />
+
+  <!-- ===== FAVICON ===== -->
+  <link rel="icon" type="image/svg+xml" href="baran_better_logo.png" />
 
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- ===== LOCAL BUSINESS SCHEMA (SEO) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Baran’s Bakery",
+    "image": "https://www.baransbakery.ca/assets/img/og-cookie.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "550 Isaiah Crescent",
+      "addressLocality": "Kitchener",
+      "addressRegion": "ON",
+      "postalCode": "N2E 0H5",
+      "addressCountry": "CA"
+    },
+    "servesCuisine": "Desserts, Cookies, Persian",
+    "telephone": "+1-519-555-0123",
+    "priceRange": "$",
+    "url": "https://www.baransbakery.ca",
+    "sameAs": [
+      "https://www.instagram.com/barans_bakery",
+      "https://www.tiktok.com/@barans_bakery"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -18,7 +61,7 @@
         <img src="images/baran_better_logo.png" alt="Baran’s Bakery Logo" style="height:70px;width:auto;display:block;">
         <span style="font-size:1.3rem;font-family:'Playfair Display',serif;font-weight:800;color:#121212;">Baran’s Bakery</span>
       </a>
-      <button class="btn btn--ghost js-scroll" data-target="#hero">Home</button>
+      <a href="https://instagram.com/barans_bakery" class="btn btn--ghost js-scroll" target="_blank">Order</a>
     </div>
   </nav>
 

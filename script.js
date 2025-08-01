@@ -93,8 +93,15 @@ window.addEventListener('DOMContentLoaded', function() {
 /* ---------- Smooth scroll buttons ---------- */
 document.querySelectorAll('.js-scroll').forEach(btn=>{
   btn.addEventListener('click',e=>{
-    e.preventDefault();
-    document.querySelector(btn.dataset.target).scrollIntoView({behavior:'smooth'});
+    // Only smooth scroll if data-target is present
+    if (btn.dataset.target) {
+      e.preventDefault();
+      const target = document.querySelector(btn.dataset.target);
+      if (target) {
+        target.scrollIntoView({behavior:'smooth'});
+      }
+    }
+    // Otherwise, let the default action happen (e.g., open external link)
   });
 });
 
