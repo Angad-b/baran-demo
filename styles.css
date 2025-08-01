@@ -44,7 +44,7 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 }
 
 /* ---------- Flavours section ---------- */
-.flavours{background:linear-gradient(180deg, #F7C8D8, #ffe3fb)}
+.flavours{background:linear-gradient(180deg, #F7C8D8, #ffbee9)}
 .flavours__grid{
   display:grid;
   gap:2rem;
@@ -84,7 +84,7 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 }
 
 /* ---------- How-it-works section ---------- */
-.howit{background:linear-gradient(180deg, #ffe3fb, #ffa0a0)}
+.howit{background:linear-gradient(180deg, #ffbee9, #ffa0a0)}
 
 /* section title already centers from earlier tweak */
 .steps-grid{
