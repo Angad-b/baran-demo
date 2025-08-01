@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baran’s Bakery – Stuffed Cookies in Kitchener</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ▸ Navbar ------------------------------------------------ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="logo" href="#">Baran’s Bakery</a>
+      <button class="btn btn--ghost js-scroll" data-target="#hero">Home</button>
+    </div>
+  </nav>
+
+  <!-- ▸ Hero -------------------------------------------------- -->
+  <header class="hero section" id="hero">
+    <div class="container hero__grid">
+      <!-- Copy -->
+      <div class="hero__copy">
+        <h1>Indulgent stuffed cookies,<br> baked fresh in Kitchener.</h1>
+        <p>Small-batch • Hand-made • Free local delivery • New flavours weekly</p>
+
+        <div class="hero__cta">
+          <button class="btn btn--primary js-scroll" data-target="#flavours">See This Week’s Flavours</button>
+          <a href="https://instagram.com/barans_bakery" target="_blank" class="btn btn--ghost">DM on Instagram</a>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="hero__img">
+        <img src="images/cookie.png" alt="Stack of Baran’s cookies" loading="lazy">
+      </div>
+    </div>
+  </header>
+
+  <!-- ▸ Flavours -------------------------------------------------->
+    <section id="flavours" class="section flavours">
+    <div class="container">
+        <h2 class="section__title">This Week’s <em>Delicious</em> Flavours</h2>
+
+        <div class="flavours__grid">
+        <!-- Card 1 -->
+        <article class="flavour-card js-reveal">
+            <img src="images/moon-walker.png" alt="Moon Walker cookie">
+            <h3>Moon Walker</h3>
+            <p>Black cocoa cookie filled with white chocolate & crushed Oreos.</p>
+            <button class="btn btn--small btn--primary">Add to Pre-Order</button>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="flavour-card js-reveal">
+            <img src="images/cookie-monster.png" alt="Cookie Monster cookie">
+            <h3>Cookie Monster</h3>
+            <p>Loaded with chips & Oreos, topped with cookie bits.</p>
+            <button class="btn btn--small btn--primary">Add to Pre-Order</button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="flavour-card js-reveal">
+            <img src="images/dubai.png" alt="Dubai cookie">
+            <h3>Dubai</h3>
+            <p>Kunafa, pistachio cream & tahini, topped with pistachios.</p>
+            <button class="btn btn--small btn--primary">Add to Pre-Order</button>
+        </article>
+        </div>
+    </div>
+    </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* ---------- Tokens ---------- */
+:root{
+  --pink:#F7C8D8;
+  --cream:#FFF6F1;
+  --cocoa:#3F2E2A;
+  --radius:24px;
+  --shadow:0 8px 20px rgba(63,46,42,.1);
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;color:var(--cocoa);background:var(--pink);line-height:1.55;scroll-behavior:smooth}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.4rem);font-weight:800;line-height:1.2;margin-bottom:.9rem;color:#121212}
+p{font-size:1rem;margin-bottom:1.6rem}
+img{max-width:100%;display:block;border-radius:var(--radius)}
+
+/* ---------- Utilities ---------- */
+.section{padding:96px 0}
+.container{width:min(90%,1140px);margin-inline:auto}
+.btn{display:inline-block;border:none;border-radius:9999px;padding:.85rem 1.8rem;font-size:.95rem;cursor:pointer;font-weight:600;transition:.25s}
+.btn--primary{background:var(--cream);color:#121212}
+.btn--primary:hover{filter:brightness(1.05)}
+.btn--ghost{background:transparent;color:#121212;border:2px solid #121212}
+.btn--ghost:hover{background:#121212;color:#fff}
+
+/* ---------- Navbar ---------- */
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.4);backdrop-filter:blur(8px);transition:background .3s}
+.nav.scrolled{background:var(--cream)}
+.nav__inner{display:flex;justify-content:space-between;align-items:center;max-width:1140px;margin:auto;padding:.6rem 1rem}
+.logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:800;text-decoration:none;color:#121212}
+
+/* ---------- Hero ---------- */
+.hero{min-height:100vh;display:flex;align-items:center;background:var(--pink)}
+.hero__grid{display:grid;gap:3rem;align-items:center;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.hero__img{perspective:800px}
+.hero__img img{transform:rotate(360deg);animation:float 35s ease-in-out infinite}
+@keyframes float{50%{transform:rotate(3deg) translateY(-10px)}}
+.hero__cta{display:flex;gap:1rem;flex-wrap:wrap}
+
+@media(max-width:640px){
+  .section{padding:60px 0}
+  .nav__inner{flex-direction:column;gap:.5rem}
+  .hero__cta{justify-content:center}
+}
+
+/* ---------- Flavours section ---------- */
+.flavours{background:linear-gradient(180deg, #F7C8D8, #ffe3fb)}
+.flavours__grid{
+  display:grid;
+  gap:2rem;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  align-items:start;
+}
+
+/* glassmorphic card */
+.flavour-card{
+  position:relative;
+  padding:2rem 1.6rem 2.4rem;
+  border-radius:var(--radius);
+  background:rgba(255, 8, 226, 0.183);
+  backdrop-filter:blur(8px);
+  border:1px solid rgb(0, 0, 0);
+  box-shadow:0 18px 26px rgba(63,46,42,.12) inset, var(--shadow);
+  text-align:center;
+  transition:transform .3s ease, box-shadow .3s ease, backdrop-filter .3s;
+}
+.flavour-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 22px 32px rgba(63,46,42,.15) inset, 0 12px 24px rgba(63,46,42,.18);
+  backdrop-filter:blur(10px);
+}
+.flavour-card h3{font-size:1.3rem;margin:.9rem 0 .5rem}
+.flavour-card p{font-size:.9rem;min-height:48px;margin-bottom:1.2rem}
+
+/* ---------- Fade-up reveal ---------- */
+.js-reveal{opacity:0;transform:translateY(30px);transition:.6s ease}
+.reveal--visible{opacity:1;transform:none}
+
+/* --- tweak flavours heading --- */
+.flavours .section__title{
+  text-align:center;                 /* centre it */
+  font-size:clamp(2.4rem,5vw,3.4rem);/* make it bigger on all screens */
+  margin-bottom:3rem; 
+}
+
+.section__title strong {
+  font-weight: bold; /* make the strong text bold */
+}
