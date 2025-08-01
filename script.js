@@ -112,3 +112,6 @@ const io=new IntersectionObserver(entries=>{
   });
 },{threshold:.25});
 document.querySelectorAll('.js-reveal').forEach(el=>io.observe(el));
+
+/* footer year */
+document.getElementById('year').textContent = new Date().getFullYear();
