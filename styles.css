@@ -216,7 +216,7 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 section:last-of-type { padding-bottom: 0; }
 
 /* ensure the footer itself contributes no extra space */
-.site-footer { margin-bottom: -1000px; }
+.site-footer { margin-bottom: -400px; }
 .site-footer *:last-child { margin-bottom: 0; }
 
 /* avoid margin-collapsing weirdness at the end of the page */
