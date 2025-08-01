@@ -24,8 +24,8 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 .btn--ghost:hover{background:#121212;color:#fff}
 
 /* ---------- Navbar ---------- */
-.nav{position:sticky;top:0;z-index:10;background:rgba(245, 240, 136, 0.4);backdrop-filter:blur(8px);transition:background .3s}
-.nav.scrolled{background:#f1e4b2}
+.nav{position:sticky;top:0;z-index:10;background:rgba(136, 216, 245, 0.4);backdrop-filter:blur(8px);transition:background .3s}
+.nav.scrolled{background:#b2c4f1}
 .nav__inner{display:flex;justify-content:space-between;align-items:center;max-width:1140px;margin:auto;padding:.6rem 1rem}
 .logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:800;text-decoration:none;color:#121212}
 
@@ -44,7 +44,7 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 }
 
 /* ---------- Flavours section ---------- */
-.flavours{background:linear-gradient(180deg, #F7C8D8, #ffbee9)}
+.flavours{background:#fff5d3}
 .flavours__grid{
   display:grid;
   gap:2rem;
@@ -84,7 +84,7 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 }
 
 /* ---------- How-it-works section ---------- */
-.howit{background:linear-gradient(180deg, #ffbee9, #ffa0a0)}
+.howit{background:#F7C8D8}
 
 /* section title already centers from earlier tweak */
 .steps-grid{
