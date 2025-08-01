@@ -13,7 +13,7 @@
 
   <!-- ▸ Navbar ------------------------------------------------ -->
   <nav class="nav" id="nav">
-    <div class="nav__inner">
+    <div class="nav__inner" style="background:#efcbc5; backdrop-filter:blur(12px); border-radius:0 0 24px 24px; box-shadow:0 2px 16px rgba(63,46,42,.07);">
       <a class="logo" href="#">Baran’s Bakery</a>
       <button class="btn btn--ghost js-scroll" data-target="#hero">Home</button>
     </div>
@@ -41,9 +41,26 @@
   </header>
 
 
+  <!-- COOKIE COUNTDOWN SECTION -->
+  <section id="cookie-countdown" class="section" style="background:#fff5d3; padding-top:48px; padding-bottom:48px;">
+    <div class="container" style="max-width:600px; margin:auto; text-align:center;">
+      <h2 class="section__title" style="font-size:2.1rem; color:#3F2E2A; margin-bottom:1.1rem;">🍪 Cookie Countdown!</h2>
+      <p style="color:#7c5c3e; font-size:1.1rem; margin-bottom:1.7rem;">A brand new flavour is dropping soon. Stay tuned and be the first to try it!</p>
+      <div id="countdown-timer" style="display:flex; justify-content:center; gap:1.2rem; font-size:2rem; font-family:monospace; font-weight:700; color:#d2aa8d; background:#fff; border-radius:18px; box-shadow:0 2px 8px rgba(63,46,42,.08); padding:1.2rem 2.2rem; width:fit-content; margin:auto;">
+        <div><span id="days">6</span><span style="display:block; font-size:.85rem; color:#3F2E2A; font-weight:400;">Days</span></div>
+        <span style="color:#b9a08a;">:</span>
+        <div><span id="hours">05</span><span style="display:block; font-size:.85rem; color:#3F2E2A; font-weight:400;">Hours</span></div>
+        <span style="color:#b9a08a;">:</span>
+        <div><span id="minutes">03</span><span style="display:block; font-size:.85rem; color:#3F2E2A; font-weight:400;">Minutes</span></div>
+        <span style="color:#b9a08a;">:</span>
+        <div><span id="seconds">29</span><span style="display:block; font-size:.85rem; color:#3F2E2A; font-weight:400;">Seconds</span></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ▸ Flavours -------------------------------------------------->
-    <section id="flavours" class="section flavours">
-    <div class="container">
+    <section id="flavours" class="section flavours" style="background:#fff5d3; padding-bottom:64px;">
+    <div class="container" style="padding-bottom:32px;">
         <h2 class="section__title">This Week’s <em>Delicious</em> Flavours</h2>
 
         <div class="flavours__grid">
@@ -106,7 +123,71 @@
           </div>
         </div>
       </div>
+
+    <!-- Spacer between Make Your Own Box and FAQ -->
+    <div style="height:64px;"></div>
+
+    <!-- BAKERY INSPIRED FAQ SECTION -->
+    <section id="faq" class="section" style="background:#fff;">
+      <div class="container" style="max-width:700px; margin:auto;">
+        <h2 class="section__title" style="text-align:center; font-size:clamp(2.2rem,4vw,3.2rem); margin-bottom:2.2rem;">Frequently Asked <span style="color:#d2aa8d;">Cookie</span> Questions 🍪</h2>
+        <div id="faq-list" style="display:flex; flex-direction:column; gap:1.2rem;">
+          <div class="faq-item" style="background:#fff5d3; border-radius:18px; box-shadow:0 2px 8px rgba(63,46,42,.08); padding:1.2rem 1.4rem; cursor:pointer; display:flex; align-items:center; transition:box-shadow .2s;" onclick="toggleFaq(this)">
+            <span class="faq-cookie" style="font-size:2rem; margin-right:1rem; transition:transform .3s;">🍪</span>
+            <div style="flex:1;">
+              <div class="faq-question" style="font-weight:600; font-size:1.1rem; display:flex; align-items:center; justify-content:space-between;">
+                <span>How do I keep my cookies as soft as a cloud?</span>
+                <span class="faq-arrow" style="margin-left:1rem; font-size:1.3rem; transition:transform .3s;">▼</span>
+              </div>
+              <div class="faq-answer" style="margin-top:.7rem; color:#7c5c3e; font-size:1rem; display:none;">Store your cookies in an airtight container with a slice of bread. The bread keeps them soft and chewy—just like magic! Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+          <div class="faq-item" style="background:#fff5d3; border-radius:18px; box-shadow:0 2px 8px rgba(63,46,42,.08); padding:1.2rem 1.4rem; cursor:pointer; display:flex; align-items:center; transition:box-shadow .2s;" onclick="toggleFaq(this)">
+            <span class="faq-cookie" style="font-size:2rem; margin-right:1rem; transition:transform .3s;">🍩</span>
+            <div style="flex:1;">
+              <div class="faq-question" style="font-weight:600; font-size:1.1rem; display:flex; align-items:center; justify-content:space-between;">
+                <span>Can I order a custom cookie flavour?</span>
+                <span class="faq-arrow" style="margin-left:1rem; font-size:1.3rem; transition:transform .3s;">▼</span>
+              </div>
+              <div class="faq-answer" style="margin-top:.7rem; color:#7c5c3e; font-size:1rem; display:none;">Absolutely! We love experimenting with new flavours. Send us your wildest cookie dreams. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+          <div class="faq-item" style="background:#fff5d3; border-radius:18px; box-shadow:0 2px 8px rgba(63,46,42,.08); padding:1.2rem 1.4rem; cursor:pointer; display:flex; align-items:center; transition:box-shadow .2s;" onclick="toggleFaq(this)">
+            <span class="faq-cookie" style="font-size:2rem; margin-right:1rem; transition:transform .3s;">🥛</span>
+            <div style="flex:1;">
+              <div class="faq-question" style="font-weight:600; font-size:1.1rem; display:flex; align-items:center; justify-content:space-between;">
+                <span>What’s the best way to enjoy my cookies?</span>
+                <span class="faq-arrow" style="margin-left:1rem; font-size:1.3rem; transition:transform .3s;">▼</span>
+              </div>
+              <div class="faq-answer" style="margin-top:.7rem; color:#7c5c3e; font-size:1rem; display:none;">Warm them up for 10 seconds in the microwave and dip in cold milk for the ultimate treat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+          <div class="faq-item" style="background:#fff5d3; border-radius:18px; box-shadow:0 2px 8px rgba(63,46,42,.08); padding:1.2rem 1.4rem; cursor:pointer; display:flex; align-items:center; transition:box-shadow .2s;" onclick="toggleFaq(this)">
+            <span class="faq-cookie" style="font-size:2rem; margin-right:1rem; transition:transform .3s;">🕌</span>
+            <div style="flex:1;">
+              <div class="faq-question" style="font-weight:600; font-size:1.1rem; display:flex; align-items:center; justify-content:space-between;">
+                <span>Are all your baked goods halal?</span>
+                <span class="faq-arrow" style="margin-left:1rem; font-size:1.3rem; transition:transform .3s;">▼</span>
+              </div>
+              <div class="faq-answer" style="margin-top:.7rem; color:#7c5c3e; font-size:1rem; display:none;">Yes, every single treat we bake is 100% halal! We carefully source all our ingredients to ensure everything is suitable for our community—so you can enjoy every bite with peace of mind and a happy heart. If you have any questions about ingredients, just ask!</div>
+            </div>
+          </div>
+          <div class="faq-item" style="background:#fff5d3; border-radius:18px; box-shadow:0 2px 8px rgba(63,46,42,.08); padding:1.2rem 1.4rem; cursor:pointer; display:flex; align-items:center; transition:box-shadow .2s;" onclick="toggleFaq(this)">
+            <span class="faq-cookie" style="font-size:2rem; margin-right:1rem; transition:transform .3s;">🎂</span>
+            <div style="flex:1;">
+              <div class="faq-question" style="font-weight:600; font-size:1.1rem; display:flex; align-items:center; justify-content:space-between;">
+                <span>Do you offer gluten-free or vegan cookies?</span>
+                <span class="faq-arrow" style="margin-left:1rem; font-size:1.3rem; transition:transform .3s;">▼</span>
+              </div>
+              <div class="faq-answer" style="margin-top:.7rem; color:#7c5c3e; font-size:1rem; display:none;">We’re always working on new recipes! Check our menu or ask us for the latest gluten-free or vegan options. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </section>
+
     <!-- ▸ How it works -------------------------------------------------->
     <section id="howit" class="section howit">
     <div class="container">
@@ -139,7 +220,73 @@
         </div>
     </div>
     </section>
-    
+
+    <!-- CREATIVE CONTACT US SECTION -->
+    <section id="contact" class="section" style="background:linear-gradient(135deg,#fff6f1 60%,#f7c8d8 100%); position:relative; overflow:hidden;">
+      <div class="container" style="max-width:700px; margin:auto; position:relative; z-index:2;">
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <div style="margin-bottom:1.5rem;">
+            <img src="images/cookie-monster.png" alt="Cookie Mascot" style="width:80px; height:80px; border-radius:50%; box-shadow:0 4px 16px rgba(63,46,42,.12); background:#fff5d3; padding:8px;">
+          </div>
+          <h2 class="section__title" style="text-align:center; font-size:clamp(2.2rem,4vw,3.2rem); margin-bottom:1.2rem; color:#3F2E2A;">Let's Bake Up a Conversation!</h2>
+          <p style="text-align:center; color:#7c5c3e; font-size:1.1rem; margin-bottom:2.2rem;">Have a question, want to place a custom order, or just want to say hi? Fill out the form below and we’ll get back to you faster than a cookie disappears from the tray 🍪</p>
+        </div>
+        <form style="display:flex; flex-direction:column; gap:1.2rem; background:#fff; border-radius:24px; box-shadow:0 8px 24px rgba(63,46,42,.10); padding:2rem; position:relative;">
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <input type="text" placeholder="Your Name" required style="flex:1; min-width:140px; padding:.9rem 1.1rem; border-radius:14px; border:1.5px solid #F7C8D8; font-size:1rem; background:#fff6f1;">
+            <input type="email" placeholder="Your Email" required style="flex:1; min-width:140px; padding:.9rem 1.1rem; border-radius:14px; border:1.5px solid #F7C8D8; font-size:1rem; background:#fff6f1;">
+          </div>
+          <textarea placeholder="What's on your mind? (Cookie ideas, questions, or just a hello!)" rows="4" required style="padding:.9rem 1.1rem; border-radius:14px; border:1.5px solid #F7C8D8; font-size:1rem; background:#fff6f1;"></textarea>
+          <button type="submit" class="btn btn--primary" style="width:fit-content; align-self:center; font-size:1.1rem; display:flex; align-items:center; gap:.5rem; background:#d2aa8d; color:#fff;">Send Message <span style="font-size:1.3rem;">🍪</span></button>
+        </form>
+        <div style="margin-top:2.2rem; text-align:center; color:#7c5c3e;">
+          <p><b>Email:</b> <a href="mailto:hello@baransbakery.com" style="color:#d2aa8d; text-decoration:underline;">hello@baransbakery.com</a></p>
+          <p style="margin-top:.5rem;"><b>Instagram:</b> <a href="https://instagram.com/barans_bakery" target="_blank" style="color:#d2aa8d; text-decoration:underline;">@barans_bakery</a></p>
+        </div>
+        <div style="position:absolute; left:-60px; bottom:-40px; opacity:0.13; z-index:1;">
+          <img src="images/cookie.png" alt="Cookie" style="width:160px;">
+        </div>
+        <div style="position:absolute; right:-50px; top:-40px; opacity:0.09; z-index:1;">
+          <img src="images/moon-walker.png" alt="Cookie" style="width:120px;">
+        </div>
+      </div>
+    </section>
+
+     <!-- BEAUTIFUL FOOTER SECTION -->
+    <footer style="background:#3F2E2A; color:#fff; padding:2.5rem 0 0 0; text-align:center; position:relative; margin-bottom:0; border-bottom-left-radius:0; border-bottom-right-radius:0;">
+      <div style="max-width:700px; margin:auto; display:flex; flex-direction:column; align-items:center; gap:1.2rem;">
+        <div style="display:flex; align-items:center; gap:.7rem; justify-content:center;">
+          <img src="images/cookie.png" alt="Baran's Bakery Cookie" style="width:38px; height:38px; border-radius:50%; box-shadow:0 2px 8px rgba(255,255,255,.08); background:#fff5d3;">
+          <span style="font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:800; letter-spacing:1px; color:#fff;">Baran’s Bakery</span>
+        </div>
+        <div style="font-size:1rem; color:#d2aa8d;">Homemade cookies baked with love in Kitchener-Waterloo</div>
+        <div style="margin:1rem 0 .5rem 0; display:flex; gap:1.2rem; justify-content:center;">
+          <a href="mailto:hello@baransbakery.com" style="color:#fff6f1; text-decoration:none; font-size:1.2rem; transition:color .2s;">Email</a>
+          <a href="https://instagram.com/barans_bakery" target="_blank" style="color:#fff6f1; text-decoration:none; font-size:1.2rem; transition:color .2s;">Instagram</a>
+        </div>
+        <div style="font-size:.95rem; color:#fff6f1; opacity:.7;">&copy; 2025 Baran’s Bakery. All rights reserved.</div>
+      </div>
+      <div style="position:absolute; right:24px; bottom:18px; opacity:0.10; z-index:0;">
+        <img src="images/cookie-monster.png" alt="Cookie Monster" style="width:60px;">
+      </div>
+
+    </footer>
+
+    <style>
+      html, body {
+        height: 100%;
+        min-height: 100%;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      footer {
+        margin-top: auto !important;
+      }
+    </style>
 
 
   <script src="script.js"></script>

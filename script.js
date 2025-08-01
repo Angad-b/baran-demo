@@ -1,3 +1,57 @@
+// Cookie Countdown Timer
+window.addEventListener('DOMContentLoaded', function() {
+  var daysEl = document.getElementById('days');
+  var hoursEl = document.getElementById('hours');
+  var minutesEl = document.getElementById('minutes');
+  var secondsEl = document.getElementById('seconds');
+  if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+  var initialSeconds = 6*24*60*60 + 5*60*60 + 3*60 + 29;
+  var remaining = initialSeconds;
+  function updateCountdown() {
+    var secs = remaining;
+    var d = Math.floor(secs / (24*60*60));
+    secs %= 24*60*60;
+    var h = Math.floor(secs / (60*60));
+    secs %= 60*60;
+    var m = Math.floor(secs / 60);
+    var s = secs % 60;
+    daysEl.textContent = d;
+    hoursEl.textContent = h.toString().padStart(2, '0');
+    minutesEl.textContent = m.toString().padStart(2, '0');
+    secondsEl.textContent = s.toString().padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(function() {
+    if (remaining > 0) {
+      remaining--;
+      updateCountdown();
+    }
+  }, 1000);
+});
+// Interactive FAQ dropdowns for bakery FAQ
+function toggleFaq(item) {
+  var answer = item.querySelector('.faq-answer');
+  var arrow = item.querySelector('.faq-arrow');
+  var cookie = item.querySelector('.faq-cookie');
+  var isOpen = answer.style.display === 'block';
+  // Close all others
+  document.querySelectorAll('.faq-item').forEach(function(faq) {
+    if (faq !== item) {
+      faq.querySelector('.faq-answer').style.display = 'none';
+      faq.querySelector('.faq-arrow').style.transform = '';
+      faq.querySelector('.faq-cookie').style.transform = '';
+    }
+  });
+  if (isOpen) {
+    answer.style.display = 'none';
+    arrow.style.transform = '';
+    if (cookie) cookie.style.transform = '';
+  } else {
+    answer.style.display = 'block';
+    arrow.style.transform = 'rotate(180deg)';
+    if (cookie) cookie.style.transform = 'scale(1.2) rotate(-10deg)';
+  }
+}
 // Drag and Drop for Make Your Own Box
 window.addEventListener('DOMContentLoaded', function() {
   var draggables = document.querySelectorAll('.draggable-item');
