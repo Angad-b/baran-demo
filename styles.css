@@ -18,9 +18,10 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 .section{padding:96px 0}
 .container{width:min(90%,1140px);margin-inline:auto}
 .btn{display:inline-block;border:none;border-radius:9999px;padding:.85rem 1.8rem;font-size:.95rem;cursor:pointer;font-weight:600;transition:.25s}
-.btn--primary{background:var(--cream);color:#121212}
+.btn--primary{background:var(--cream);color:#121212; text-decoration:none;}
 .btn--primary:hover{filter:brightness(1.05)}
 .btn--ghost{background:transparent;color:#121212;border:2px solid #121212}
+.btn--ghost{text-decoration:none;}s
 .btn--ghost:hover{background:#121212;color:#fff}
 
 /* ---------- Navbar ---------- */
