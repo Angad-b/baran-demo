@@ -34,8 +34,14 @@ img{max-width:100%;display:block;border-radius:var(--radius)}
 .hero{min-height:100vh;display:flex;align-items:center;background:var(--pink)}
 .hero__grid{display:grid;gap:3rem;align-items:center;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
 .hero__img{perspective:800px}
-.hero__img img{transform:rotate(360deg);animation:float 35s ease-in-out infinite}
-@keyframes float{50%{transform:rotate(3deg) translateY(-10px)}}
+.hero__img img{
+  transform:rotate(-2deg);
+  animation:float 2s ease-in-out infinite;
+  width:82%;
+  max-width:700px;
+  margin:auto;
+}
+@keyframes float{50%{transform:rotate(2deg) translateY(-10px)}}
 .hero__cta{display:flex;gap:1rem;flex-wrap:wrap}
 
 @media(max-width:640px){
